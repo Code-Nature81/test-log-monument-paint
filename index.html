@@ -26,7 +26,8 @@ body {
 .tooltip {
     position: absolute;
     background: rgba(51, 51, 51, 0.76);
-    border: 4px solid #666;
+   /* border: 4px solid #666;*/
+    border-radius:30px;
     width: 200px;
     padding: 20px;
     color: #f1f1f1;
@@ -39,6 +40,7 @@ body {
     pointer-events: none;
     z-index:10;
     
+    
 }
 .tooltip::after, .tooltip::before {
     content: "";
@@ -48,14 +50,16 @@ body {
     height: 0;
     width: 0;
     position: absolute;
+    
 }
 .tooltip::after {
-    border-bottom-color: rgba(51, 51, 51, 0.699);
+    border-bottom-color: rgba(51, 51, 51, 0.77);
     border-width: 25px;
     margin-left: -25px;
+    
 }
 .tooltip::before {
-    border-bottom-color: #666;
+   /* border-bottom-color: #666;*/
     border-width: 30px;
     margin-left: -30px;
 }
@@ -99,13 +103,20 @@ body {
 
 
 
+
+
 </style>
 <body> 
             <img class="img1"src="test1panochateau1.jpg" width="1239" height="142" margin-bottom="32px" border="0" />
         <div class="btn">
-                <img class="img2" src="Logo_monument_historique.svg">
-                <div class="tooltip">Le hameau de Fa située dans le département de l’Aude fait partie de la région Occitanie  . Il ce situe a 3.4km d’Esperaza , 12 km de Quillan et compte 373 habitants (2013) appelés les Fanols .
-                    La commune possède une tour Wisigothe , restes d’un château . Le rempart extérieur très abîmé et parfois inexistant entoure un plateau de 40x20m ,  a l’origine ce ne devait pas être le château d’un seigneur mais d’une garnison , cela explique l’absence de texte historique</br></br><a href="https://code-nature81.github.io/Tour-de-Fa/">Visite virtuelle</a> </div>
+                <img class="img2" src="Logo_monument_historique.svg" alt="">
+
+            <div class="tooltip">
+                    Le hameau de Fa située dans le département de l’Aude fait partie de la région Occitanie  . Il ce situe a 3.4km d’Esperaza , 12 km de Quillan et compte 373 habitants (2013) appelés les Fanols .
+                    La commune possède une tour Wisigothe , restes d’un château . Le rempart extérieur très abîmé et parfois inexistant entoure un plateau de 40x20m ,  a l’origine ce ne devait pas être le château d’un seigneur mais d’une garnison , cela explique l’absence de texte historique</br></br><a href="https://code-nature81.github.io/Tour-de-Fa/">Visite virtuelle</a> 
+        
+                </div>
+            </div>
         </div>
     
     
